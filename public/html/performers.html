@@ -14,6 +14,7 @@
     <title>Document</title>
   </head>
   <body>
+    <nav id="nav"></nav>
     <section class="bg-[#FAFAFC] text-center py-2 max-sm:px-5">
       <div class="lg:container mx-auto lg:px-60">
         <button class="w-36 py-1 my-4 border-2 rounded-lg border-gray-300">
@@ -48,5 +49,16 @@
         </div>
       </div>
     </section>
+
+
+    <script>
+      fetch('../../index.html/#nav')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading nav:', error));
+    </script>
+  
   </body>
 </html>

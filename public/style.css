@@ -796,6 +796,14 @@ video {
   height: 13rem;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1783,6 +1791,10 @@ video {
 @media (min-width: 1024px) {
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
   }
 
   .lg\:block {

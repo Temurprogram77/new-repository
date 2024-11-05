@@ -11,17 +11,13 @@
 <body>
     <nav class="bg-white border-b border-gray-200 p-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-
             <div class="flex items-center space-x-4">
                 <span class="text-lg font-bold text-gray-800">MONDAY</span>
                 <select class="border border-gray-300 rounded-lg p-1 text-gray-700">
-
                     <option> UZ</option>
                     <option>EN</option>
                 </select>
             </div>
-
-
             <div class="hidden md:flex flex-1 mx-4">
                 <input type="text" placeholder="Search for services..."
                     class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -33,17 +29,33 @@
                 <a href="#" class="hidden md:inline hover:text-blue-600">Market</a>
                 <div class="relative">
                     <button class="text-gray-600 focus:outline-none">
-                        <span
-                            class="absolute top-0 right-0 bg-red-500 text-white rounded-full text-[8px] w-3 h-3 flex items-center justify-center">12</span>
-
+                        <div class="flex items-center space-x-4">
+                            <div class="relative">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 2.761-2.239 5-5 5H7l-4 4V7c0-2.761 2.239-5 5-5h6c2.761 0 5 2.239 5 5v5z" />
+                              </svg>
+                              <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">12</span>
+                            </div>
+                            <div class="relative">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-5-5.917V4a2 2 0 10-4 0v1.083A6.002 6.002 0 004 11v3.159c0 .538-.214 1.055-.595 1.436L2 17h5m5 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                              </svg>
+                              <span class="absolute top-0 right-0 bg-red-500 rounded-full w-2 h-2"></span>
+                            </div>
+                            <div class="p-2 bg-blue-100 rounded-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v2m14 0h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m0-10H5m12 0H5m12 4H7m0 0H5m2 0a1 1 0 110 2h8a1 1 0 100-2H7z" />
+                              </svg>
+                            </div>
+                            <div class="relative">
+                              <img src="../assets/img/Group 1707478398.svg" alt="User Avatar" class="w-10 h-10 rounded-full">
+                              <span class="absolute bottom-0 right-0 bg-green-500 border-2 border-white rounded-full w-3 h-3"></span>
+                            </div>
+                          </div>    
                     </button>
                 </div>
-                <img src="../assets/Group 1707478398.png" alt="Profile"
-                    class="w-8 h-8 rounded-full border border-gray-300">
             </div>
         </div>
-
-
         <div class="hidden md:flex max-w-7xl mx-auto mt-4 items-center space-x-6 overflow-x-auto">
             <a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-2">Social & SMM</a>
             <a href="#" class="text-gray-700 hover:text-blue-600">SEO</a>
@@ -159,7 +171,7 @@
         </div>
     </div>
     <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden p-6 border-2 cursor-pointer ">
-        <h2 class="text-2xl font-semibold mb-6 text-center">Estimated cost of work in various categories of services:
+        <h2 class="text-2xl font-semibold mb-12 text-left">Estimated cost of work in various categories of services:
         </h2>
         <div class="flex justify-center items-center mb-8 space-x-4">
             <div class="text-center">
@@ -201,6 +213,72 @@
             </div>
         </div>
     </div>
+    <div class="grid grid-cols-2 gap-4 p-4 bg-gray-50 rounded-lg">
+        <!-- Left Column -->
+        <div class="space-y-4">
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Website on a ready-made platform</span>
+            <span class="font-semibold">100 000</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Turnkey website</span>
+            <span class="font-semibold">10 000</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Website editing, 1 element</span>
+            <span class="font-semibold">2500</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Website adaptation</span>
+            <span class="font-semibold">2500</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Edit template</span>
+            <span class="font-semibold">10 000</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>One-page layout</span>
+            <span class="font-semibold">10 000</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Layout of the main page of the site</span>
+            <span class="font-semibold">100 000</span>
+          </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="space-y-4">
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Layout of the internal website page</span>
+            <span class="font-semibold">2500</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Setting up metrics/analytics</span>
+            <span class="font-semibold">2500</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Add analytics code to site</span>
+            <span class="font-semibold">10 000</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Layout of email template</span>
+            <span class="font-semibold">2500</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>SEO website optimization</span>
+            <span class="font-semibold">100 000</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Install and configure plugin</span>
+            <span class="font-semibold">100 000</span>
+          </div>
+          <div class="flex justify-between bg-gray-100 p-3 rounded-lg">
+            <span>Website on a ready-made platform</span>
+            <span class="font-semibold">10 000</span>
+          </div>
+        </div>
+      </div>
+      
 </body>
 
 </html>

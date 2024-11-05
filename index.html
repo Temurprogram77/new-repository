@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <div class=""></div>
     <!-- class="bg-[#F2F2F2]" -->
     <nav class="bg-white border-b border-gray-200 p-4">
         <div class="flex items-center container mx-auto sm:justify-between justify-center">
@@ -83,12 +82,64 @@
     </div>
     <img src="./assets/img/bg-img.png" class="container sm:flex hidden mx-auto" alt="bg-img">
     <img src="./assets/img/bg-img_responsive.png" class="container sm:hidden flex h-[200px]" alt="bg-img">
-    <div class="container mx-auto translate-y-[-50px] flex gap-[20px]">
-        <div class="flex bg-white">
+    <div
+        class="container mx-auto lg:translate-y-[-100px] flex lg:flex-row flex-col justify-center gap-[20px] md:p-10 p-4">
+        <div class="flex bg-white rounded-3xl md:flex justify-center">
             <div class="flex flex-col items-center p-4">
-                <img src="assets/img/person.png" class="translate-y-[-50px]" alt="person">
+                <img src="assets/img/person.png" class="translate-y-[-50px] md:w-[150px] w-[80px]" alt="person">
+                <div class="flex flex-col items-center gap-1 md:hidden">
+                    <h4 class="text-[15px] font-semibold">James Kilroy</h4>
+                    <p class="text-[10px] font-medium">Web Developer, Professional Linkbuilder</p>
+                    <div class="text-[10px] font-bold flex items-center gap-2">
+                        <div class="w-[7px] h-[7px] rounded-full bg-[#62F94D]"></div>
+                        Online
+                    </div>
+                </div>
+                <div class="md:hidden flex flex-col mt-[20px]">
+                    <div class="flex gap-3">
+                        <div class="flex items-center gap-2 text-[20px] font-bold">
+                            <img src="assets/svg/star.svg" class="w-[20px]" alt="star">
+                            5.0
+                            <span class="text-[12px] font-medium">Seller</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <p class="text-[12px]">Highest rating plus</p>
+                            <img src="assets/svg/info.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="w-full px-2 flex items-center mt-2 justify-between">
+                        <p class="font-bold text-[14px]">20588 </p>
+                        <p class="text-[10px] font-medium">Orders completed</p>
+                    </div>
+                    <div class="w-full px-2 flex items-center mt-2 justify-between">
+                        <p class="font-bold text-[14px]">16360 </p>
+                        <p class="text-[10px] font-medium">Feedback received</p>
+                    </div>
+                    <div class="w-full px-2 flex items-center mt-2 justify-between">
+                        <p class="font-bold text-[14px]">100% </p>
+                        <p class="text-[10px] font-medium">Orders successfully delivered</p>
+                    </div>
+                    <div class="w-full px-2 flex items-center mt-2 justify-between">
+                        <p class="font-bold text-[14px]">100% </p>
+                        <p class="text-[10px] font-medium">Orders delivered on time</p>
+                    </div>
+                    <div class="w-full px-2 flex items-center mt-2 justify-between">
+                        <p class="font-bold text-[14px]">55% </p>
+                        <p class="text-[10px] font-medium">Repeat orders</p>
+                    </div>
+                    <div class="flex gap-2 mt-[20px]">
+                        <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                        <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                        <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                        <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                        <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                        <div class="max-w-[40px] text-[10px] font-medium">
+                            Show all award(20)
+                        </div>
+                    </div>
+                </div>
                 <div
-                    class="flex flex-col justify-center items-center gap-2 border-2 border-[#F1F3F9] rounded-3xl max-w-fit p-3">
+                    class="flex flex-col mt-[20px] justify-center items-center gap-2 border-2 border-[#F1F3F9] rounded-3xl max-w-fit p-3">
                     <p class="text-[20px] text-center">@James_K</p>
                     <div class="flex items-center gap-2 w-[170px]">
                         <img src="./assets/svg/verificated.svg" class="w-[20px] h-[20px]" alt="verificated">
@@ -127,27 +178,228 @@
                     </div>
                 </div>
             </div>
-            <div class="p-5">
+            <div class="p-5 flex-col gap-3 md:flex hidden">
                 <div class="flex items-center gap-2">
-                    <h2>James Kilroy</h2>
+                    <h2 class="text-[30px] font-medium">James Kilroy</h2>
                     <img src="assets/svg/verificated.svg" class="w-[20px]" alt="verificated">
                 </div>
-                <h4>Web Developer, Professional Linkbuilder</h4>
+                <h4 class="text-[20px] font-semibold">Web Developer, Professional Linkbuilder</h4>
                 <div class="flex items-center gap-2">
                     <div class="w-[10px] h-[10px] rounded-full bg-[#62F94D]"></div>
                     Online
                 </div>
-                <h4>About me</h4>
-                <p>During its work, more than 100 projects of varying levels of complexity were completed.
+                <h4 class="text-[16px] font-medium">About me</h4>
+                <p class="text-[16px] font-normal max-w-[630px]">During its work, more than 100 projects of varying
+                    levels of complexity were completed.
                     What can I offer you</p>
-                <div class="bg-[#FAFAFC]">
+                <div class="bg-[#FAFAFC] w-fit cursor-pointer flex items-center gap-2 py-2 px-3 rounded-3xl">
                     <h3>Read full description</h3>
+                    <img src="assets/svg/plus.svg" alt="plus">
+                </div>
+                <p>Skills</p>
+                <div class="flex flex-wrap">
+                    <div class="border-2 border-[#F1F3F9] rounded-3xl px-3 py-2 text-[14px]">Bitrix24</div>
+                    <div class="border-2 border-[#F1F3F9] rounded-3xl px-3 py-2 text-[14px]">Development on 1C-Bitrix
+                    </div>
+                    <div class="border-2 border-[#F1F3F9] rounded-3xl px-3 py-2 text-[14px]">Bitrix24</div>
+                    <div class="border-2 border-[#F1F3F9] rounded-3xl px-3 py-2 text-[14px]">Development on 1C-Bitrix
+                    </div>
+                    <div class="bg-[#FAFAFC] w-fit cursor-pointer flex items-center gap-2 py-2 px-3 rounded-3xl">
+                        <h3> Show all skills (20)</h3>
+                        <img src="assets/svg/plus.svg" alt="plus">
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/svg/tag.svg" alt="">
+                    Prices for services
+                    <img src="assets/svg/plus.svg" alt="">
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/svg/medal.svg" alt="">
+                    Certificates
                     <img src="assets/svg/plus.svg" alt="">
                 </div>
             </div>
         </div>
-        <div class="">
-
+        <div class="bg-white p-3 rounded-3xl gap-2 md:flex hidden flex-col items-center">
+            <div class="flex flex-col items-center">
+                <div class="lg:flex hidden gap-2">
+                    <div
+                        class="bg-black cursor-pointer text-gray-400 rounded-xl flex gap-2 items-center px-3 py-2 border-2 border-black hover:text-black hover:bg-white">
+                        <img src="assets/svg/setting-2.svg" class="text-white" alt="settings">
+                        Settings
+                    </div>
+                    <div class="border-2 cursor-pointer border-gray-400 px-3 py-2 rounded-xl">
+                        Preview profile
+                    </div>
+                </div>
+                <div class="flex lg:flex-col flex-row items-center lg:gap-3 gap-7">
+                    <div class="flex items-center gap-2 text-[40px] font-bold">
+                        <img src="assets/svg/star.svg" alt="star">
+                        5.0
+                        <span class="text-[12px] font-medium">Seller</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <p>Highest rating plus</p>
+                        <img src="assets/svg/info.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col lg:w-full w-fit">
+                <div class="w-full px-2 flex items-center mt-2 lg:justify-between justify-start lg:gap-0 gap-4">
+                    <p class="font-bold text-[20px]">20588 </p>
+                    <p class="text-[12px] font-medium">Orders completed</p>
+                </div>
+                <div class="w-full px-2 flex items-center mt-2 lg:justify-between justify-start lg:gap-0 gap-4">
+                    <p class="font-bold text-[20px]">16360 </p>
+                    <p class="text-[12px] font-medium">Feedback received</p>
+                </div>
+                <div class="w-full px-2 flex items-center mt-2 lg:justify-between justify-start lg:gap-0 gap-4">
+                    <p class="font-bold text-[20px]">100% </p>
+                    <p class="text-[12px] font-medium">Orders successfully delivered</p>
+                </div>
+                <div class="w-full px-2 flex items-center mt-2 lg:justify-between justify-start lg:gap-0 gap-4">
+                    <p class="font-bold text-[20px]">100% </p>
+                    <p class="text-[12px] font-medium">Orders delivered on time</p>
+                </div>
+                <div class="w-full px-2 flex items-center mt-2 lg:justify-between justify-start lg:gap-0 gap-4">
+                    <p class="font-bold text-[20px]">55% </p>
+                    <p class="text-[12px] font-medium">Repeat orders</p>
+                </div>
+            </div>
+            <div class="flex gap-2 mt-[20px]">
+                <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                <div class="rounded-full w-[30px] h-[30px] bg-[#9CA5B3]"></div>
+                <div class="max-w-[40px] text-[10px] font-medium">
+                    Show all award(20)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md:px-20 px-4 flex flex-wrap items-center lg:justify-between justify-center gap-5 mx-auto container">
+        <div class="flex items-center rounded-2xl bg-[#F2F2F2] p-5 cursor-pointer gap-3 md:w-auto w-[400px]">
+            <img src="assets/svg/shapes.svg" alt="shapes">
+            <div class="">
+                <p>Services</p>
+                <p>Your current active services</p>
+            </div>
+        </div>
+        <div class="flex items-center rounded-2xl bg-[#F2F2F2] p-5 cursor-pointer gap-3 md:w-auto w-[400px]">
+            <img src="assets/svg/medal.svg" alt="medal">
+            <div class="">
+                <p>Certificates</p>
+                <p>Upload and manage certificates</p>
+            </div>
+        </div>
+        <div class="flex items-center rounded-2xl bg-[#F2F2F2] p-5 cursor-pointer gap-3 md:w-auto w-[400px]">
+            <img src="assets/svg/gallery.svg" alt="gallery">
+            <div class="">
+                <p>Portfolio</p>
+                <p>Show your best works</p>
+            </div>
+        </div>
+        <div class="flex items-center rounded-2xl bg-[#F2F2F2] p-5 cursor-pointer gap-3 md:w-auto w-[400px]">
+            <img src="assets/svg/message-text.svg" alt="message-text">
+            <div class="">
+                <p>Reviews</p>
+                <p>Reviews by customers</p>
+            </div>
+        </div>
+        <div class="flex items-center rounded-2xl bg-[#F2F2F2] p-5 cursor-pointer gap-3 md:w-auto w-[400px]">
+            <img src="assets/svg/tag.svg" alt="tag">
+            <div class="">
+                <p>Prices for services</p>
+                <p>Your current services charge</p>
+            </div>
+        </div>
+    </div>
+    <div class="mx-auto container md:px-20 px-3">
+        <h1 class="text-[30px] font-semibold md:text-start text-center">My services</h1>
+        <div class="flex flex-wrap md:justify-between justify-center gap-4">
+            <div class="rounded-2xl bg-[#f1f3f93b] p-3 hover:shadow-md transition-all cursor-pointer">
+                <div class="bg-[#EDF4FF] w-full h-[140px] mb-3 rounded-2xl"></div>
+                <p class="font-semibold max-w-[200px]">I will make a full brand book...</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-[#B7C3D6]">From</span>
+                    <span class="text-[#4790FF] font-medium">100 000 UZS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/svg/person.svg" class="w-[30px]" alt="person">
+                    <p class="text-[#575E6A] text-[15px] font-semibold">James K.</p>
+                    <p class="text-[#B7C3D6] text-[12px] font-medium">Advanced</p>
+                </div>
+            </div>
+            <div class="rounded-2xl bg-[#f1f3f93b] p-3 hover:shadow-md transition-all cursor-pointer">
+                <div class="bg-[#EDF4FF] w-full h-[140px] mb-3 rounded-2xl"></div>
+                <p class="font-semibold max-w-[200px]">I will make a full brand book...</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-[#B7C3D6]">From</span>
+                    <span class="text-[#4790FF] font-medium">100 000 UZS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/svg/person.svg" class="w-[30px]" alt="person">
+                    <p class="text-[#575E6A] text-[15px] font-semibold">James K.</p>
+                    <p class="text-[#B7C3D6] text-[12px] font-medium">Advanced</p>
+                </div>
+            </div>
+            <div class="rounded-2xl bg-[#f1f3f93b] p-3 hover:shadow-md transition-all cursor-pointer">
+                <div class="bg-[#EDF4FF] w-full h-[140px] mb-3 rounded-2xl"></div>
+                <p class="font-semibold max-w-[200px]">I will make a full brand book...</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-[#B7C3D6]">From</span>
+                    <span class="text-[#4790FF] font-medium">100 000 UZS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/svg/person.svg" class="w-[30px]" alt="person">
+                    <p class="text-[#575E6A] text-[15px] font-semibold">James K.</p>
+                    <p class="text-[#B7C3D6] text-[12px] font-medium">Advanced</p>
+                </div>
+            </div>
+            <div class="rounded-2xl bg-[#f1f3f93b] p-3 hover:shadow-md transition-all cursor-pointer">
+                <div class="bg-[#EDF4FF] w-full h-[140px] mb-3 rounded-2xl"></div>
+                <p class="font-semibold max-w-[200px]">I will make a full brand book...</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-[#B7C3D6]">From</span>
+                    <span class="text-[#4790FF] font-medium">100 000 UZS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/svg/person.svg" class="w-[30px]" alt="person">
+                    <p class="text-[#575E6A] text-[15px] font-semibold">James K.</p>
+                    <p class="text-[#B7C3D6] text-[12px] font-medium">Advanced</p>
+                </div>
+            </div>
+            <div class="rounded-2xl bg-[#f1f3f93b] p-3 hover:shadow-md transition-all cursor-pointer">
+                <div class="bg-[#EDF4FF] w-full h-[140px] mb-3 rounded-2xl"></div>
+                <p class="font-semibold max-w-[200px]">I will make a full brand book...</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-[#B7C3D6]">From</span>
+                    <span class="text-[#4790FF] font-medium">100 000 UZS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/svg/person.svg" class="w-[30px]" alt="person">
+                    <p class="text-[#575E6A] text-[15px] font-semibold">James K.</p>
+                    <p class="text-[#B7C3D6] text-[12px] font-medium">Advanced</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="border-2 border-[#AEB5BF] flex items-center gap-2 rounded-2xl mx-auto my-3 cursor-pointer w-fit px-10 py-2">
+            Show More
+            <img src="assets/svg/plus.svg" alt="">
+        </div>
+    </div>
+    <div class="px-[80px] my-4">
+        <div class="mx-auto container border-2 flex items-center justify-between px-3 py-1 rounded-3xl border-[#AEB5BF]">
+            <div class="flex items-center gap-2">
+                <img src="assets/svg/person.svg" class="w-[30px]" alt="person">
+                James_K statistics
+            </div>
+            <div class="text-[#4790FF] cursor-pointer">
+                Show statistics
+            </div>
         </div>
     </div>
 </body>

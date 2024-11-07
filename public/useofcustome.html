@@ -5,68 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USe of custome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+        integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <nav class="bg-white border-b border-gray-200 p-4">
-        <div class="max-w-full mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <span class="text-lg font-bold text-gray-800 cursor-pointer">MONDAY</span>
-                <select class="border border-gray-300 rounded-lg p-1 text-gray-700">
-                    <option> UZ</option>
-                    <option>EN</option>
-                </select>
-            </div>
-            <div class="hidden md:flex flex-1 mx-4">
-                <input type="text" placeholder="Search for services..."
-                    class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
 
-            <div class="flex items-center space-x-4 md:space-x-6 text-gray-700">
-                <a href="#" class="hidden md:inline hover:text-blue-600">Services</a>
-                <a href="#" class="hidden md:inline hover:text-blue-600">Projects</a>
-                <a href="#" class="hidden md:inline hover:text-blue-600">Market</a>
-                <div class="relative">
-                    <button class="text-gray-600 focus:outline-none">
-                        <div class="flex items-center space-x-4">
-                            <div class="relative">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 2.761-2.239 5-5 5H7l-4 4V7c0-2.761 2.239-5 5-5h6c2.761 0 5 2.239 5 5v5z" />
-                              </svg>
-                              <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">12</span>
+<body>
+    <header class="bg-white">
+        <nav class="bg-white border-b  border-gray-200 p-4">
+            <div class="flex items-center lg:px-20 lg:container mx-auto sm:justify-between justify-center">
+                <div class="flex items-center gap-4">
+                    <p class="cursor-pointer sm:text-[16px] text-[10px]">
+                        MONDAY
+                    </p>
+                    <div
+                        class="flex items-center gap-1 bg-[#FAFAFC] sm:p-3 p-2 rounded-2xl cursor-pointer sm:text-[15px] text-[10px]">
+                        <img src="../assets/img/" class="sm:w-[18px] w-[12px]" alt="global" />
+                        UZ
+                        <img src="./assets/svg/forward.svg" alt="forward" />
+                    </div>
+                    <div
+                        class="bg-[#FAFAFC] rounded-2xl flex justify-between sm:p-3 p-2 sm:text-[16px] text-[10px] cursor-pointer">
+                        <input type="text" class="sm:w-[280px] w-full bg-transparent outline-none cursor-pointer"
+                            placeholder="Search for services..." />
+                        <img src="./assets/svg/search.svg" alt="search" />
+                    </div>
+                </div>
+                <div class="flex items-center gap-10">
+                    <div class="text-[#9CA5B3] gap-5 lg:flex hidden">
+                        <a href="#" class="hover:text-black">Orders</a>
+                        <a href="#" class="hover:text-black">Projects</a>
+                        <a href="#" class="hover:text-black">Sellers</a>
+                        <a href="./public/html/performers.html" class="hover:text-black flex items-center gap-2">
+                            <img src="./assets/svg/favourite.svg" class="w-[20px]" alt="favourite" />
+                            Favorites
+                        </a>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="sm:flex hidden relative cursor-pointer">
+                            <div
+                                class="flex justify-center items-center bg-[#4790FF] text-[10px] text-white w-[12px] h-[12px] rounded-full absolute top-[-5px] right-[-5px]">
+                                2
                             </div>
-                            <div class="relative">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-5-5.917V4a2 2 0 10-4 0v1.083A6.002 6.002 0 004 11v3.159c0 .538-.214 1.055-.595 1.436L2 17h5m5 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                              </svg>
-                              <span class="absolute top-0 right-0 bg-red-500 rounded-full w-2 h-2"></span>
+                            <img src="assets/svg/bag.svg" alt="bag" />
+                        </div>
+                        <div class="sm:flex hidden relative cursor-pointer">
+                            <div
+                                class="flex justify-center items-center bg-[#FF8E8E] text-[10px] text-white w-[12px] h-[12px] rounded-full absolute top-[-5px] right-[-5px]">
+                                8
                             </div>
-                            <div class="p-2 bg-blue-100 rounded-full">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v2m14 0h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m0-10H5m12 0H5m12 4H7m0 0H5m2 0a1 1 0 110 2h8a1 1 0 100-2H7z" />
-                              </svg>
-                            </div>
-                            <div class="relative">
-                              <img src="../../assets/img/Group 1707478398.svg" alt="User Avatar" class="w-10 h-10 rounded-full">
-                              <span class="absolute bottom-0 right-0 bg-green-500 border-2 border-white rounded-full w-3 h-3"></span>
-                            </div>
-                          </div>    
-                    </button>
+                            <img src="assets/svg/message.svg" alt="message" />
+                        </div>
+                        <div class="relative cursor-pointer sm:flex hidden">
+                            <img src="assets/svg/notification.svg" alt="notification" />
+                        </div>
+                    </div>
+                    <div class="gap-2 md:flex hidden">
+                        <div
+                            class="flex justify-center items-center cursor-pointer w-[20px] h-[20px] bg-[#EDF4FF] rounded-full">
+                            <img src="assets/svg/ballet.svg" alt="" />
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/svg/person.svg" class="w-[30px] h-[30px]" alt="person" />
+                            <div class="w-[10px] h-[10px] absolute right-0 bottom-0 rounded-full bg-[#62F94D]"></div>
+                        </div>
+                        <img src="./assets/svg/forward.svg" class="cursor-pointer " />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class=" max-w-full hidden md:flex max-w-7xl mx-auto mt-4 items-center space-x-6 overflow-x-auto">
-            <a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-2">Social & SMM</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600">SEO</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600">Copywriting</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600">Web Development</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600">Scripts & Telegram Bots</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600">Logotypes & Branding</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600">Web & Mobile Design</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600">Scripts & Bots</a>
-            <a href="#" class="text-gray-700 hover:text-blue-600">All Services</a>
-        </div>
-    </nav>
+            <div
+                class="md:flex hidden py-2 items-center lg:text-[16px] md:text-[10px] text-[8px] justify-between lg:px-20 lg:container mx-auto px-4">
+                <a href="#"
+                    class="hover:text-[#4790FF] text-blue-600 border-b-2 border-blue-600 pb-4 transition-all">Social &
+                    SMM</a>
+                <a href="#" class="hover:text-[#4790FF] transition-all">SEO</a>
+                <a href="#" class="hover:text-[#4790FF] transition-all">Copywriting</a>
+                <a href="#" class="hover:text-[#4790FF] transition-all">Web Development</a>
+                <a href="#" class="hover:text-[#4790FF] transition-all">Scripts & Telegram Bots</a>
+                <a href="#" class="hover:text-[#4790FF] transition-all">Logotypes & Branding</a>
+                <a href="#" class="hover:text-[#4790FF] transition-all lg:flex hidden">Web & Mobile Design</a>
+                <a href="#" class="hover:text-[#4790FF] transition-all lg:flex hidden">Scripts & Bots</a>
+                <a href="#" class="hover:text-[#4790FF] transition-all xl:flex hidden">All Services</a>
+            </div>
+        </nav>
+
+    </header>
+
 
     <div class="md:hidden p-4">
         <input type="text" placeholder="Search for services..."
@@ -75,7 +100,8 @@
     <div class="max-w-4xl mx-auto py-10">
 
         <div class="text-center cursor-pointer">
-            <button class="mb-2 text-sm font-medium text-gray-500 bg-gray-100 px-4 py-2 rounded-full hover:bg-gray-300 hover:border-gray-300">
+            <button
+                class="mb-2 text-sm font-medium text-gray-500 bg-gray-100 px-4 py-2 rounded-full hover:bg-gray-300 hover:border-gray-300">
                 For customers
             </button>
             <h1 class="text-3xl font-semibold text-gray-800 mt-2">
@@ -84,80 +110,106 @@
             <p class="text-gray-500 mt-2">
                 We have assembled an army of remote assistants who quickly solve any problem.
             </p>
-           
+
         </div>
         <div class="container mx-auto p-4">
-            <a href="../useof.html"><h2 class="flex items-center  mb-8 cursor-pointer justify-center text-xl text-center font-medium text-gray-800">
-                <img  class="mr-2" src="../../assets/img/shield-security.png" alt="">        Guarantees and safety 
-            </h2></a>
-            
+            <a href="../useof.html">
+                <h2
+                    class="flex items-center  mb-8 cursor-pointer justify-center text-xl text-center font-medium text-gray-800">
+                    <img class="mr-2" src="../../assets/img/shield-security.png" alt=""> Guarantees and safety
+                </h2>
+            </a>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 cursor-pointer">
                 <div class="p-6  rounded-lg h-full shadow-md">
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center gap-2 ">
                             <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
                             <h2 class="text-lg font-medium">Search</h2>
                         </div>
                         <button class="p-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                     </div>
                     <p class="text-gray-600 mb-4">Here you will find the best contractor to fulfill your order!</p>
-                    <p class="text-gray-600">All Monday performers undergo mandatory identification. There are no random people here. Monday has hundreds of performers online all the time, so searching for candidates often takes a few minutes. This will allow you to quickly transfer your project to work</p>
+                    <p class="text-gray-600">All Monday performers undergo mandatory identification. There are no random
+                        people here. Monday has hundreds of performers online all the time, so searching for candidates
+                        often takes a few minutes. This will allow you to quickly transfer your project to work</p>
                 </div>
                 <div class="p-6 border rounded-lg h-full shadow-md">
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center gap-2">
                             <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                             </svg>
                             <h2 class="text-lg font-medium">Payment</h2>
                         </div>
                         <button class="p-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                     </div>
-                    <p class="text-gray-600 mb-5">You can place an order on Monday for free, without having any money on your balance. You will need to top up your account only after you have studied all the offers from the performers and decided on the choice of freelancer and the cost of the work. When you have chosen a contractor, in order for the order to proceed, you will need to top up your balance with the required amount.</p>
-                    <p class="text-gray-600 mb-5">This money will be frozen in your account until the completion of the work and your verification of the work performed. When the order is completed you check the result. If everything is done well and on time, you confirm completion and only after that the reserved amount is transferred to the contractor’s account. The order is closed and archived. </p>
-                    <p class="text-gray-600">There are no commissions or any additional payments for the customer on Monday. You only pay the performer's fee.</p>
+                    <p class="text-gray-600 mb-5">You can place an order on Monday for free, without having any money on
+                        your balance. You will need to top up your account only after you have studied all the offers
+                        from the performers and decided on the choice of freelancer and the cost of the work. When you
+                        have chosen a contractor, in order for the order to proceed, you will need to top up your
+                        balance with the required amount.</p>
+                    <p class="text-gray-600 mb-5">This money will be frozen in your account until the completion of the
+                        work and your verification of the work performed. When the order is completed you check the
+                        result. If everything is done well and on time, you confirm completion and only after that the
+                        reserved amount is transferred to the contractor’s account. The order is closed and archived.
+                    </p>
+                    <p class="text-gray-600">There are no commissions or any additional payments for the customer on
+                        Monday. You only pay the performer's fee.</p>
                 </div>
                 <div class="p-6 border rounded-lg h-full shadow-md">
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center gap-2">
-                          <img src="../../assets/img/number.png" alt="">
+                            <img src="../../assets/img/number.png" alt="">
                             <h2 class="text-lg font-medium">Raiting</h2>
                         </div>
                         <button class="p-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                     </div>
-                    <p class="text-gray-600 mb-5">To fulfill your order, you yourself will be able to select the contractor with the highest rating and good experience in the field of knowledge you need. </p>
-                    <p class="text-gray-600">A high rating means that the performer has already successfully completed tasks in this area. To find an employee who meets your requirements, read reviews of other customers about his work - this will help you make the right choice.</p>
+                    <p class="text-gray-600 mb-5">To fulfill your order, you yourself will be able to select the
+                        contractor with the highest rating and good experience in the field of knowledge you need. </p>
+                    <p class="text-gray-600">A high rating means that the performer has already successfully completed
+                        tasks in this area. To find an employee who meets your requirements, read reviews of other
+                        customers about his work - this will help you make the right choice.</p>
                 </div>
                 <div class="p-6 border rounded-lg h-full shadow-md">
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center gap-2">
-                           <img src="../../assets/img/number2.png" alt="">
+                            <img src="../../assets/img/number2.png" alt="">
                             <h2 class="text-lg font-medium">Arbitration</h2>
                         </div>
                         <button class="p-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                     </div>
-                    <p class="text-gray-600">If you are dissatisfied with the result of the work, ask the contractor to complete the order, make corrections and eliminate defects. If you cannot reach an agreement with the contractor, contact Monday Arbitration. Our specialists will quickly sort out the details and find a constructive and fair way out of the situation.</p>
+                    <p class="text-gray-600">If you are dissatisfied with the result of the work, ask the contractor to
+                        complete the order, make corrections and eliminate defects. If you cannot reach an agreement
+                        with the contractor, contact Monday Arbitration. Our specialists will quickly sort out the
+                        details and find a constructive and fair way out of the situation.</p>
                 </div>
             </div>
-         </div>
+        </div>
     </div>
     <div class="max-w-4xl  mx-auto py-10 px-4 bg-white rounded-lg shadow-md cursor-pointer">
         <div class="flex items-start space-x-4">
@@ -205,8 +257,7 @@
             </div>
 
             <div class="text-center">
-                <img src="../../assets/img/img3.png" alt="Design"
-                    class="w-20 h-20 rounded-full shadow-lg mx-auto mb-2">
+                <img src="../../assets/img/img3.png" alt="Design" class="w-20 h-20 rounded-full shadow-lg mx-auto mb-2">
                 <p class="font-semibold">Design</p>
             </div>
 
@@ -225,103 +276,109 @@
 
 
             <div class="text-center">
-                <img src="../../assets/img/img6.svg" alt="Other"
-                    class="w-20 h-20 rounded-full shadow-lg mx-auto mb-2">
+                <img src="../../assets/img/img6.svg" alt="Other" class="w-20 h-20 rounded-full shadow-lg mx-auto mb-2">
                 <p class="font-semibold">Other</p>
             </div>
         </div>
     </div>
     <div class=" max-w-4xl mx-auto grid grid-cols-2 gap-4 p-4 bg-gray-50 rounded-lg cursor-pointer">
         <div class="space-y-4">
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Website on a ready-made platform</span>
-            <span class="font-semibold">100 000</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Turnkey website</span>
-            <span class="font-semibold">10 000</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Website editing, 1 element</span>
-            <span class="font-semibold">2500</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Website adaptation</span>
-            <span class="font-semibold">2500</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Edit template</span>
-            <span class="font-semibold">10 000</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>One-page layout</span>
-            <span class="font-semibold">10 000</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Layout of the main page of the site</span>
-            <span class="font-semibold">100 000</span>
-          </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Website on a ready-made platform</span>
+                <span class="font-semibold">100 000</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Turnkey website</span>
+                <span class="font-semibold">10 000</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Website editing, 1 element</span>
+                <span class="font-semibold">2500</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Website adaptation</span>
+                <span class="font-semibold">2500</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Edit template</span>
+                <span class="font-semibold">10 000</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>One-page layout</span>
+                <span class="font-semibold">10 000</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Layout of the main page of the site</span>
+                <span class="font-semibold">100 000</span>
+            </div>
         </div>
 
         <div class="space-y-4">
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Layout of the internal website page</span>
-            <span class="font-semibold">2500</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Setting up metrics/analytics</span>
-            <span class="font-semibold">2500</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Add analytics code to site</span>
-            <span class="font-semibold">10 000</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Layout of email template</span>
-            <span class="font-semibold">2500</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>SEO website optimization</span>
-            <span class="font-semibold">100 000</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Install and configure plugin</span>
-            <span class="font-semibold">100 000</span>
-          </div>
-          <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
-            <span>Website on a ready-made platform</span>
-            <span class="font-semibold">10 000</span>
-          </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Layout of the internal website page</span>
+                <span class="font-semibold">2500</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Setting up metrics/analytics</span>
+                <span class="font-semibold">2500</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Add analytics code to site</span>
+                <span class="font-semibold">10 000</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Layout of email template</span>
+                <span class="font-semibold">2500</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>SEO website optimization</span>
+                <span class="font-semibold">100 000</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Install and configure plugin</span>
+                <span class="font-semibold">100 000</span>
+            </div>
+            <div class="flex justify-between bg-gray-100 p-3 rounded-2xl">
+                <span>Website on a ready-made platform</span>
+                <span class="font-semibold">10 000</span>
+            </div>
         </div>
-      </div>    
-      <div class=" max-w-4xl mx-auto flex flex-col lg:flex-row lg:space-x-8 bg-gray-50 p-6 lg:p-8 rounded-lg">
-        <div class="flex flex-col justify-between bg-gradient-to-r from-blue-300 to-blue-100 p-6 rounded-xl w-full lg:w-96 h-60 shadow-md mb-4 lg:mb-24">
-          <h2 class="text-2xl font-semibold text-black">Get started <br> right now!</h2>
-          <button class="mt-4 bg-black text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800">
-            Go to registration
-          </button>
+    </div>
+    <div class=" max-w-4xl mx-auto flex flex-col lg:flex-row lg:space-x-8 bg-gray-50 p-6 lg:p-8 rounded-lg">
+        <div
+            class="flex flex-col justify-between bg-gradient-to-r from-blue-300 to-blue-100 p-6 rounded-xl w-full lg:w-96 h-60 shadow-md mb-4 lg:mb-24">
+            <h2 class="text-2xl font-semibold text-black">Get started <br> right now!</h2>
+            <button class="mt-4 bg-black text-white font-medium py-2 px-4 rounded-lg hover:bg-gray-800">
+                Go to registration
+            </button>
         </div>
         <div class="max-w-sm  lg:max-w-md cursor-pointer">
-          <div class="flex items-center ">
-            <div class="bg-gray-100 p-2 rounded-full mr-3">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11V7a4 4 0 10-8 0v4m8-4v4m4 4H8m-3 0h16a1 1 0 001-1V9a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1z" />
-              </svg>
+            <div class="flex items-center ">
+                <div class="bg-gray-100 p-2 rounded-full mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-500" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 11V7a4 4 0 10-8 0v4m8-4v4m4 4H8m-3 0h16a1 1 0 001-1V9a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1z" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold">How to top up your balance?</h3>
             </div>
-            <h3 class="text-lg font-semibold">How to top up your balance?</h3>
-          </div>
-          <p class="text-gray-600 ">
-            You can top up your balance after you select a suitable service from  our catalog, or publish your order , receive offers from performers and make your choice.
-          </p>
-          <p class="text-gray-600 ">
-            That is, you deposit money only when you are sure that your task will be completed and there are people ready to take on this work.
-          </p>
-          <p class="text-gray-600">
-            You can top up your account on the <a href="#" class="text-blue-500 hover:underline">Balance</a> page, which will be available after <a href="#" class="text-blue-500 hover:underline">registering on the site</a>.
-          </p>
+            <p class="text-gray-600 ">
+                You can top up your balance after you select a suitable service from our catalog, or publish your order
+                , receive offers from performers and make your choice.
+            </p>
+            <p class="text-gray-600 ">
+                That is, you deposit money only when you are sure that your task will be completed and there are people
+                ready to take on this work.
+            </p>
+            <p class="text-gray-600">
+                You can top up your account on the <a href="#" class="text-blue-500 hover:underline">Balance</a> page,
+                which will be available after <a href="#" class="text-blue-500 hover:underline">registering on the
+                    site</a>.
+            </p>
         </div>
-      </div>
-      <footer class="bg-[#202020] text-gray-300 py-12">
+    </div>
+    <footer class="bg-[#202020] text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
@@ -362,7 +419,9 @@
                             <a href="#" class="hover:text-white transition-colors flex items-center">
                                 Verification
                                 <svg class="w-4 h-4 ml-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
                                 </svg>
                             </a>
                         </li>
@@ -373,10 +432,12 @@
                 <button class="px-6 py-2 border border-gray-600 rounded-full hover:bg-gray-800 transition-colors">
                     Sign In
                 </button>
-                <button class="px-6 py-2 border border-gray-600 rounded-full hover:bg-gray-800 transition-colors flex items-center justify-center">
+                <button
+                    class="px-6 py-2 border border-gray-600 rounded-full hover:bg-gray-800 transition-colors flex items-center justify-center">
                     Join
                     <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                 </button>
             </div>
